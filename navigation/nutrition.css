@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.contanier{
+    background-image: url(./images/nutrition.jpeg);
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-repeat: repeat;
+    /* position: absolute; */
+}
+   
+.contanier h1{
+    font-size: 80px;
+    top: 26%;
+    left: 18%;
+    position: absolute;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+.contanier h1::after{
+    content: "";
+    width: 0;
+    border-radius: 50px;
+    position: absolute;
+    bottom: -4px;
+    width: 100%;
+    transform-origin: right;
+    height: 6px;
+    left: 0;
+    background: #0dc4f2;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+}
+.contanier h1:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.contanier p{
+    top: 50%;
+    left: 25%;
+    position: absolute;
+    text-align: center;
+    font-size: 18px;
+    /* pointer-events: none; */
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.contanier p:hover{
+  transform: scale(1.02);  
+}
+#logo img{
+    width: 150px;
+    height: 120px;
+    margin: 10px;
+    padding: 10px;
+   transition: transform 0.15s ease-in-out;
+}
+#logo img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.dum h2{
+    margin: 30px;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 30px;
+    pointer-events: none;
+}
+.anchor ul{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding-bottom: 20px;
+    font-size: 20px;
+    justify-items: center;
+}
+.anchor ul li{
+    text-align: center;
+    width: 180px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    border-radius: 30px;
+    justify-self: center;
+    justify-items: center;
+    cursor: pointer;
+}
+.anchor ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.4s;
+
+   
+}
+.anchor ul li a:hover{
+    color: #f44336;
+}
+.jini{
+    margin: 10px;
+    padding-top: 40px;
+    text-align: start;
+    padding-left: 40px;
+    border-bottom: 2px solid white;
+}
+.jini h1{
+    padding: 40px;
+    font-size: 40px;
+}
+.jini h1 span{
+    font-size: 15px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .column {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    background-size: cover;
+    position: relative;
+    width: 436px;
+    overflow: hidden;
+    height: 200px;
+    line-height: 32px;
+  }
+  .column img {
+    max-width: 100%; 
+    height: auto;
+    height: 200px;
+    background-size: cover;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+.column h1{
+    position: absolute;
+   transform: translateY(-34.4%);
+   color: white;
+   width: 100%;
+   /* font-weight: 400; */
+   padding-top: 10px;
+   padding-bottom: 20px;
+   text-align: center;
+   background-color: rgba(0, 0, 0, 0.53);
+   transition: transform 0.2s ease-in;
+
+  } 
+  .column:hover h1{
+    transform: translateY(-100%);
+  }
+  .column h1 span{
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 10px;
+  }
+  .footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    pointer-events: none;
+}
+.footer h4{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 30px;
+}
+.nm{
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+}
+.nm-link{
+    flex: 1;
+    text-align: center; 
+    list-style: none;
+    display: inline-block;
+}
+.nm-link li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 22px;
+    position: relative;
+}
+.footer h3{
+    padding: 20px;
+}
+.footer h5{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 300;
+}

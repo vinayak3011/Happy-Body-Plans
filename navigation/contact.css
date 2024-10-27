@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+}
+.contanier{
+    background-image: url(./images/contact.jpg);
+    width: 100%;
+    height: 80vh;
+    background-size: contain;
+    background-repeat: no-repeat; 
+    /* position: absolute; */
+}
+   
+.contanier h1{
+    font-size: 80px;
+    top: 26%;
+    left: 20%;
+    position: absolute;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+.contanier h1::after{
+    content: "";
+    width: 0;
+    border-radius: 50px;
+    position: absolute;
+    bottom: -4px;
+    width: 100%;
+    transform-origin: right;
+    height: 6px;
+    left: 0;
+    background: #f44336;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+}
+.contanier h1:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.contanier p{
+    top: 50%;
+    left: 25%;
+    position: absolute;
+    text-align: center;
+    font-size: 18px;
+    /* pointer-events: none; */
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.contanier p:hover{
+  transform: scale(1.02);  
+}
+.map{
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding-bottom: 50px;
+    transition: opacity 0.3s ease-in-out;
+}
+.map img{
+    width: 80%;
+    height: auto; 
+    margin-top: 40px;
+    opacity: 0.3;
+    transition: all 0.4s ease-in-out;
+
+}
+.map:hover img{
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+.dum h2{
+    margin: 30px;
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 50px;
+    pointer-events: none;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.detail{
+    margin-right: 150px;
+}
+.frm{
+    width: 40%;
+    padding-left: 50px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border-radius: 10px;
+}
+form h3{
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: 500;
+    pointer-events: none;
+}
+form input, form textarea{
+    border: 0;
+    margin: 5px 0;
+    padding: 20px;
+    outline: none;
+    background-color: rgba(128, 128, 128, 0.511);
+    color: black;
+    font-size: 16px;
+    border-radius: 10px;
+    resize: none;
+}
+form button{
+    border: 1px solid white;
+    padding: 22px 16px;
+    background: transparent;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+form button:hover{
+    border: 1px solid #f44336 ;
+    background-color: #f44336;
+    transition: 0.5s;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    pointer-events: none;
+}
+.footer h4{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 30px;
+}
+.nm{
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+}
+.nm-link{
+    flex: 1;
+    text-align: center; 
+    list-style: none;
+    display: inline-block;
+}
+.nm-link li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 22px;
+    position: relative;
+}
+.footer h3{
+    padding: 20px;
+}
+.footer h5{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 300;
+}
+#logo img{
+    width: 150px;
+    height: 120px;
+    margin: 10px;
+    padding: 10px;
+   transition: transform 0.15s ease-in-out;
+}
+#logo img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.hero{
+    display: inline-block;
+    position: absolute;
+    top: 4%;
+    left: 90%;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 18px 16px;
+    background: transparent;
+}
+.hero:hover{
+    border: 1px solid #f44336 ;
+    background-color: #f44336;
+    transition: 0.5s;
+}

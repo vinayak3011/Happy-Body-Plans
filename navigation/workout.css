@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.contanier{
+    background-image: url(./images/workout34.jpg);
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    /* position: absolute; */
+}
+   
+.contanier h1{
+    font-size: 80px;
+    top: 26%;
+    left: 18%;
+    position: absolute;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+.contanier h1::after{
+    content: "";
+    width: 0;
+    border-radius: 50px;
+    position: absolute;
+    bottom: -4px;
+    width: 100%;
+    transform-origin: right;
+    height: 6px;
+    left: 0;
+    background: #f105d9;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+}
+.contanier h1:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.contanier p{
+    top: 50%;
+    left: 23%;
+    position: absolute;
+    text-align: center;
+    font-size: 18px;
+    /* pointer-events: none; */
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.contanier p:hover{
+  transform: scale(1.02);  
+}
+#logo img{
+    width: 150px;
+    height: 120px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 200px;
+   transition: transform 0.15s ease-in-out;
+}
+#logo img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    backdrop-filter: blur(10px) solid black;
+}
+.dum h2{
+    margin: 30px;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 30px;
+    pointer-events: none;
+}
+.anchor{
+    width: 100%;
+    text-align: center;
+}
+.anchor ul{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 20px;
+    justify-items: center;
+}
+.anchor ul li{
+    text-align: center;
+    width: 100%;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    position: relative;
+    left: -5%;
+    text-align: center;
+    transition: all 0.3s ease;
+    justify-self: center;
+    justify-items: center;
+    cursor: pointer;
+}
+.hero{
+    display: inline-block;
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    padding: 18px 38px;
+    background: transparent;
+    border-radius: 40px;
+}
+.hero:hover{
+    background-color: #f44336;
+    transition: 0.5s;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    pointer-events: none;
+}
+.footer h4{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 30px;
+}
+.nm{
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+}
+.nm-link{
+    flex: 1;
+    text-align: center; 
+    list-style: none;
+    display: inline-block;
+}
+.nm-link li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 22px;
+    position: relative;
+}
+.footer h3{
+    padding: 20px;
+}
+.footer h5{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.row{
+    width: 100%;
+    display: flex;
+    height: 400px;
+    padding-top: 30px;
+}
+.col{
+    width: 50%;
+    margin: 20px;
+}
+.col2{
+    margin-top: 20px;
+    margin-right: 15px;
+    width: 50%;
+    height: 100%;
+}
+.lol{
+    text-align: center;
+    margin: 40px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid white;
+}

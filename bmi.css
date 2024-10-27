@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#hera {
+    background-color: rgb(0, 0, 0);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/bmi.jpg);
+    background-size: cover;
+
+}
+
+#main {
+    background-color:rgb(255, 255, 255);
+    height: 450px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    /* for div centering 4 lines */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    box-shadow: 0px 0px 130px rgb(0, 0, 0);
+    transform: ease;
+
+}
+
+#font1 {
+    font-family: sans-serif;
+    font-size: x-large;
+    font-weight: 600;
+    margin: 15px;
+    position: absolute;
+    bottom: 350px;
+}
+
+.font11 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-stretch: expanded;
+    font-style: bold;
+    font-size: large;
+    margin: 50px 0px 20px 0px;
+
+}
+#font1:hover{
+    scale: 1.1;  
+    transition: 0.1s ease-in-out;
+    cursor: none;
+}
+.font2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-stretch: expanded;
+    font-style: bold;
+    font-size: medium;
+    margin: 5px;
+}
+
+.input {
+    background-color: rgba(32, 25, 25, 0.253);
+    width: 110px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    padding: 0px 0px 0px 40px;
+    font-size: large;
+    outline: none;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.731);
+
+}
+
+#btn {
+    background-color: rgba(200, 187, 153, 0.874);
+    width: 270px;
+    height: 50px;
+    margin: 10px 0px 0px 0px;
+    border-radius: 10px;
+    border: none;
+    transition: transform 0.15s ease-in-out;
+    outline: none;
+}
+
+#in {
+
+
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    align-content: center;
+    align-items: center;
+}
+
+#output {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-stretch: expanded;
+    font-style: bold;
+    font-size: xx-large;
+    padding: 20px 0px 0px 0px;
+    top: 200px;
+    align-items: flex-end;
+}
+
+#btn:hover {
+    background-color: #f44336;
+    color: aliceblue;
+    transform: scale(1.15);
+}
+#footer
+{
+    align-items: baseline;
+    text-align: center;
+    padding-top: 44%;
+    font-weight: 500;
+    font-size: larger;
+    font-family: 'Raleway', sans-serif;;
+    font-stretch: expanded;
+}
+.forward{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-stretch: expanded;
+    font-style: bold;
+    font-size: larger;
+    align-items: flex-end;
+    text-decoration: none;
+}
+.forward:hover{
+    color: red;
+}
+a{
+    margin: 2px;
+    color: rgb(0, 0, 0);
+}
+#logo img{
+    width: 150px;
+    height: 120px;
+    margin: 10px;
+    padding: 10px;
+   transition: transform 0.15s ease-in-out;
+}
+#logo img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
