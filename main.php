@@ -227,14 +227,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </section>
     <section class="footer" id="about">
         <h4>ABOUT US</h4>
-        <h3>Project Guide : Prof. Vaishali Chavan</h3>
-        <h5>- Group Members -</h5>
     <div class="nm">
         <ul class="nm-link">
-            <li>Soham Wanganekar</li>
-            <li>Deeksha Upadhyay</li>
-            <li>Tanish Shah</li>
-            <li>Manthan Rathod</li>
         </ul>
     </div>
     <br>
